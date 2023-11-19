@@ -1,0 +1,245 @@
+/*for all elements*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/*for all header elements*/
+header{
+    z-index: 999;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+}
+
+/*for Karnataka | one state, many worlds*/
+.brand{
+    color:white;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*for all navigation elements*/
+.navigation{
+    position: relative;
+}
+
+/*for anchor tag elements in navigation*/
+.navigation-items a{
+    position: relative;
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+/*for anchor tag elements in navigation,when we hover on them*/
+.navigation-items a:hover{
+    background-color: #333;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*for slider section*/
+section{
+    padding:100px 200px;
+}
+
+.home{
+    position: relative;
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background:rgba(217, 211, 143, 0.753);
+}
+
+.home:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.414);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.home video{
+    z-index: 000;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.slider-navigation{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom:12px;
+}
+
+.nav-btn{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor:pointer;
+    box-shadow:0 0 2px rgba(255,255,255,0.5);
+    transition: 0.3s ease;
+    margin-right: 20px;
+}
+
+.nav-btn.active{
+    background:rgba(187, 181, 122, 0.753);
+}
+
+.video-slide{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.video-slide.active{
+    clip-path: circle(150% at 0 50%);
+}
+
+.home img{
+    z-index: 000;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.content{
+    z-index: 888;
+    width:70%;
+    margin-top: 50px;
+
+}
+
+.content h1{
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.content h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.content p{
+    margin-bottom: 65px;
+    color: white;
+}
+
+.content button{
+    padding: 15px;
+    background-color:black;
+    color:white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.content button:hover{
+    color:rgba(217, 211, 143, 0.753);
+}
+
+/*contact*/
+
+#wrapper{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+}
+
+.button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 12px;
+    background: #fff;
+    border-radius: 70px;
+    cursor: pointer;
+    box-shadow: 10px 0px 0px rgba(0,0,0,0.1);
+}
+.button:hover{
+  width: 200px;
+}
+.icon{
+    display:grid;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+.button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.button:nth-child(3):hover .icon{
+  background: #d12f9d;
+}
+.button:nth-child(4):hover .icon{
+  background:green;
+}
+.button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.button:nth-child(6):hover .icon{
+    background:#916917;
+  }
+.button:nth-child(7):hover .icon{
+    background:#914617;
+}
+.icon a,i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+  color: black;
+  overflow: hidden;
+}
+
+/*footer*/
+#footer{
+    text-align: center;
+    font-size: 20px;
+    background-color:white;
+    margin:1cm;
+    font-weight: lighter;
+    color: #333;
+}
+

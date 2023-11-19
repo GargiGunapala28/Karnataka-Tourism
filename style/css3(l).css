@@ -1,0 +1,81 @@
+/*css for login page*/
+body {
+    background-image: linear-gradient(to right,red,yellow);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.main {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 450px;
+    margin: 7em auto;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.925);
+}
+
+.log {
+    padding-top: 40px;
+    color: #1a141d;
+    font-weight: bold;
+    font-size: 23px;
+    text-align:center;
+}
+
+.form1 label{
+    font-size:15px;padding-left:1cm;
+}
+
+.un,.pass{
+    width: 76%;
+    color: rgba(0, 0, 0, 0.849);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(247, 245, 245, 0.89);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(158, 149, 149, 0.815);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    align-self:center;
+}
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.774) !important;
+    
+}
+
+form.form1 {
+    padding-top: 20px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+    background: linear-gradient(to right, #121113, #3c343d);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left:1.3cm;
+    font-size: 13px;
+}
+
+.forgot {
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.12);
+    color: #150f16;
+    padding-left: 3.5cm;
+}
+
+.forgot a:hover{
+    color: #4b464b;
+}
+a {
+    color: #2e2a2e;
+    text-decoration: none
+}
