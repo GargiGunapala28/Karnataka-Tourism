@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style/css1(i).css">
+</head>
+<body>
+
+    <!--navigation bar using header-->
+    <header>
+        <a href="#" class="brand">Karnataka |
+            <span style="font-size:large;font-style: italic;">One State, Many Worlds.</span>
+        </a>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">HOME</a>
+                <a href="explore.html">EXPLORE</a>
+                <a href="destinations.html">DESTINATIONS</a>
+                <a href="login.html">LOGIN</a>
+                <a href="signup.html">SIGN-UP</a>
+                <a href="#wrapper">CONNECT</a>
+            </div>
+        </div>
+    </header>
+    
+    <!--slide navigation-->
+    <section class="home">
+        <video class="video-slide active" src="resources/pexels-p'ma'-2835528-1920x1080-50fps.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="resources/pexels-tom-fisk-5635376-3840x2160-30fps_Trim.mp4" autoplay muted loop></video>
+        <img class="video-slide" src="resources/image0.png" alt="palace"></img>
+        <img class="video-slide" src="resources/image.jpg" alt="palace"></img>
+        <video class="video-slide" src="resources/karnataka_tourism.mp4" autoplay muted loop></video>
+
+        <!--text on the videos and image-->
+        <div class="content">
+            <h1><span style="font-size: 20px;color: white;">Experience Incredible</span><br/>History | Heritage | Wildlife <br></h1>
+            <p>Being regarded as “One State, Many Worlds”, the Karnataka State Tourism is characterized by monuments, heritage, nature, wildlife, adventure, and sacred tourist places.
+                There are 319 major tourist destinations in the state of Karnataka, the highest in India. Karnataka is the fourth most visited tourist destination in India.</p>
+            <button onclick="location.href='explore.html';" target="_blank">Explore</button>
+        </div>
+
+        <!--for buttons-->
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+    <!--Connect using font-awesome icons-->
+    <div id="wrapper">
+        <div class="button">
+           <div class="icon">
+              <a href="https://www.facebook.com/KarnatakaWorld/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+           </div>
+        </div>
+        <div class="button">
+           <div class="icon">
+              <a href="https://twitter.com/karnatakaworld" target="_blank"><i class="fab fa-twitter"></i></a>
+           </div>
+        </div>
+        <div class="button">
+           <div class="icon">
+              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+           </div>
+        </div>
+        <div class="button">
+           <div class="icon">
+              <a style="font-size: 20px;"><i class='fa fa-phone-alt'></i>     +91 1234567890</a>
+           </div>
+        </div>
+        <div class="button">
+           <div class="icon">
+              <a href="https://www.youtube.com/@karnatakatourism7698" target="_blank"><i class="fab fa-youtube"></i></a>
+           </div>
+        </div>
+        <div class="button">
+            <div class="icon">
+               <a style="font-size: 15px;"><i class="fa fa-envelope"></i> karnataka@gmail.com</a>
+            </div>
+         </div>
+         <div class="button">
+            <div class="icon">
+               <a href="https://www.primevideo.com/detail/Gandhada-Gudi/0SZXSUQZL51Z6RI01Q2KEKVX33" target="_blank"><i class="fa fa-film"></i></a>
+            </div>
+         </div>
+     </div>
+
+
+    <!--JS for slide navigation and buttons-->
+    <script type="text/javascript">
+        const btns=document.querySelectorAll(".nav-btn");
+        const slides=document.querySelectorAll(".video-slide");
+
+        var sliderNav=function(manul){
+            btns.forEach((btn)=>{
+                btn.classList.remove("active");
+            });
+
+            slides.forEach((slide)=>{
+                slide.classList.remove("active");
+            });
+
+            btns[manul].classList.add("active");
+            slides[manul].classList.add("active");
+        }
+        btns.forEach((btn,i)=>{
+            btn.addEventListener("click",()=>{
+                sliderNav(i);
+            });
+        });
+    </script>
+
+    <!--footer with copywrite-->
+    <footer id="footer">
+        <p>&copy;2023 website by Gargi</p>
+    </footer>
+    
+</body>
+</html>
